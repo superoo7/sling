@@ -39,8 +39,9 @@ defmodule Sling.Mixfile do
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
-      {:comeonin, "~> 4.0"}, # Password hashing library for Elixir
-      {:bcrypt_elixir, "~> 1.0"}
+      {:comeonin, "~> 4.0"},            # Password hashing library for Elixir
+      {:bcrypt_elixir, "~> 1.0"},       # Bcrypt hash required by comeonin
+      {:guardian, "~> 0.14.0"}             # An authentication library for use with Elixir applications
 ]
   end
 
